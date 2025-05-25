@@ -49,7 +49,7 @@ body {
 
 .sidebar-logo{
     position: absolute;
-    top: 30px;
+    top: -2%;
     left: 50%;
     transform: translateX(-50%);
 
@@ -58,7 +58,7 @@ body {
     border-radius: 0.8em;
     background-color: #383838;
     box-shadow: 4px 4px 6px rgb(0, 0, 0, 0.3);
-    margin-top: 80px;
+    margin-top: 60%;
     z-index: 10;
 
     display: flex;
@@ -82,6 +82,7 @@ body {
     margin: auto 0;
     padding: 0;
     height: 100%;
+    margin-top: 100%;
 }
 
 .sidebar-button {
@@ -95,6 +96,7 @@ body {
     background-color: #383838;
     box-shadow: 4px 4px 6px rgb(0, 0, 0, 0.3);
     transition: transform 0.3s ease;
+    margin-bottom: -20%;
 }
 
 .sidebar-icon {
@@ -111,7 +113,7 @@ body {
 /* Estilo da main */
 
 .main-content {
-    margin-top: 80px;
+    margin-top: 1%;
     margin-left: 8em;
     padding: 2em;
 }
@@ -129,8 +131,8 @@ body {
 
 .ad-container {
     display: flex;
-    width: 900px;
-    height: 300px;
+    width: 60%;
+    height: 30%;
     background-color: #341931;
     padding-left: 2em;
     padding-top: 1em;
@@ -138,8 +140,8 @@ body {
 }
 
 .ad-text {
-    width: 370px;
-    height: 150px;
+    width: 50%;
+    height: 50%;
 }
 
 .ad-text h1 {
@@ -148,23 +150,188 @@ body {
 }
 
 .ad-text h2 {
-    width: 370px;
+    width: 70%;
     font-size: 1.1em;
     color: white;
 }
 
 .ad-button {
-    width: 200px;
-    height: 50px;
+    width: 50%;
     margin-top: 2em;
     border-radius: 15px;
+    padding: 2%;
 
     border: none;
     background-color: #1C1C1C;
 
     font-size: 1.2em;
     font-family: "Poppins", sans-serif;
-    font-weight: 700;
+    font-weight: 100%;
     font-style: normal;
     color: white;
+
+    cursor: pointer;
 }
+
+
+
+
+
+
+
+
+@media (max-width: 1024px) {
+    .main-content {
+        margin-left: 6em; /* Reduz a margem da sidebar */
+        padding: 1em;
+    }
+
+    .bem-vindo h1 {
+        font-size: 1.8em;
+        margin-left: 1em;
+    }
+
+    .bem-vindo h2 {
+        font-size: 1.8em;
+        margin-left: 1em;
+    }
+    
+    .ad-container {
+        flex-direction: column; /* Faz o anúncio ocupar toda a largura */
+        width: 80%;
+        height: 40%;
+        padding: 1em;
+        margin-left: 2em;
+    }
+
+    .ad-text {
+        width: 70%;
+        text-align: left;
+    }
+
+    .ad-text h1 {
+        font-size: 1.5em;
+        width: 70%;
+    }
+
+    .ad-text h2 {
+        font-size: 1em;
+        width: 90%;
+    }
+
+    .ad-button {
+        width: 50%;
+        float: left;
+    }
+}
+
+@media (max-width: 768px) {
+    .sidebar-container {
+        width: 5em; /* Sidebar menor */
+    }
+
+    .main-content {
+        margin-left: 5em;
+        padding: 0.5em;
+        flex-direction: column;
+    }
+
+    .bem-vindo h1 {
+        font-size: 1.5em;
+    }
+
+     .bem-vindo h2 {
+        font-size: 1.5em;
+    }
+
+    .ad-container {
+        width: 85%;
+        padding: 0.5em;
+    }
+
+    .ad-text {
+        width: 100%;
+        text-align: left;
+        margin-left: 4%;
+    }
+
+    .ad-text h1 {
+        font-size: 1.0em;
+        width: 100%;
+    }
+
+    .ad-button {
+        width: 35%;
+        height: 30%;
+    }
+}
+
+@media (max-width: 480px) {
+    .sidebar-container {
+        width: 4em; /* Sidebar ainda menor para mobile */
+    }
+
+    .main-content {
+        margin-left: 4em;
+        flex-direction: column;
+    }
+
+    .bem-vindo h1 {
+        font-size: 1.2em;
+    }
+
+    .ad-container {
+        width: 100%;
+        height: 20%;
+        flex-direction: column;
+        padding: 1em;
+    }
+
+    .ad-text {
+        width: 100%;
+        text-align: left;
+    }
+
+    .ad-button {
+        width: 100%;
+        font-size: 1em;
+    }
+}
+
+
+
+
+
+/* Tela cartão pagina 1*/
+.html-cartao, .body_cartao {
+    height: 100vh;
+} 
+
+section {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-tela-cartao {
+    display: flex;
+    width: 80%;
+    height: 100%;
+    margin-left: 10%;
+    gap: 10%;
+    align-items: center;
+    justify-content: center;
+}
+.botoa_adicionar_novo_cartao {
+    padding: 7%;
+    border: none;
+    border-radius: 15px;
+    background-color: #381550;
+    color: white;
+    cursor: pointer;
+}
+
+a {
+   text-decoration: none;
+   color: white; 
+}
+/* Tela cartão pagina 1*/
