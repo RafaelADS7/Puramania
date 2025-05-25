@@ -6,3 +6,6 @@ class restaurantView(TemplateView):
 
 def index(request):
     return render(request, 'pages/index.html')
+
+def cartaopagina1(request):
+    return render(request, 'pages/cartaopagina1.html')

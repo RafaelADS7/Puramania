@@ -1,0 +1,61 @@
+{% load static %}
+<!DOCTYPE html>
+<html class="html-cartao" lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cartão</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto+Slab:wght@900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="body_cartao">
+    <header>
+        <div class="sidebar-container">
+            <div class="sidebar-logo">
+                <img src="./images/logo.png" alt="">
+            </div>
+            <ul class="sidebar-list">
+                <li class="sidebar-button">
+                    <a href=""><i class="fa-solid fa-phone sidebar-icon"></i></a>
+                </li>
+                <li class="sidebar-button">
+                    <a href=""><i class="fa-solid fa-utensils sidebar-icon"></i></a>
+                </li>
+                <li class="sidebar-button">
+                    <a href="cartaopagina1.html"><i class="fa-solid fa-credit-card sidebar-icon"></i></a>
+                </li>
+                <li class="sidebar-button">
+                    <a href=""><i class="fa-solid fa-user sidebar-icon"></i></a>
+                </li>
+                <li class="sidebar-button">
+                    <a href=""><i class="fa-solid fa-heart sidebar-icon"></i></a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <main class="main-tela-cartao">
+        <section>
+            <h1>Pague sem complicações</h1>
+            <p>É prático, seguro e você não perde nenhum <br>
+             minuto a mais quando seu pedido chegar.</p>
+             <br>
+            <button class="botoa_adicionar_novo_cartao"> <a href="cartaopagina2.html">Adicionar novo cartão</a>  </button>
+        </section>
+        
+        <div>
+             <img src="{% static 'images/Imagem.png' %}" alt="">
+        </div>
+       
+    </main>
+</body>
+
+</html>
