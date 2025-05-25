@@ -1,11 +1,11 @@
 {% load static %}
 <!DOCTYPE html>
-<html lang="en">
+<html class="html-cartao" lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pura mania</title>
+    <title>cartão</title>
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
@@ -16,7 +16,7 @@
         rel="stylesheet">
 </head>
 
-<body>
+<body class="body_cartao">
     <header>
         <div class="sidebar-container">
             <div class="sidebar-logo">
@@ -30,7 +30,7 @@
                     <a href=""><i class="fa-solid fa-utensils sidebar-icon"></i></a>
                 </li>
                 <li class="sidebar-button">
-                    <a href="cartaopagina1"><i class="fa-solid fa-credit-card sidebar-icon"></i></a>
+                    <a href="cartao.html"><i class="fa-solid fa-credit-card sidebar-icon"></i></a>
                 </li>
                 <li class="sidebar-button">
                     <a href=""><i class="fa-solid fa-user sidebar-icon"></i></a>
@@ -42,23 +42,22 @@
         </div>
     </header>
 
-    <main class="main-content">
-        <div class="bem-vindo">
-            <h2>Olá Usuario,</h2>
-            <h1>Bem vindo ao <strong>Pura mania</strong></h1>
-        </div>
-
-        <section class="ad-container">
-            <div class="ad-text">
-                <h1>Faça seu primeiro pedido e ganhe 50% off</h1>
-                <h2>faça um pedido até de 100R$ e aproveite seu desconto</h2>
-                <button href="" class="ad-button">Peça agora</button>
+    <main class="main-escolha-de-cartoes">
+        <h1 class="h1_pagina2">Escolha um meio de pagamento</h1>
+        
+        <a class="opcoes-cartao" href="{% url 'cartaopagina3' %}" style="text-decoration: none; color: inherit;">
+            <div class="circulo-card">
+                <img class="imagem-cartoes" src="{% static 'images/Card.png' %}" alt="">
             </div>
-
-            <div class="ad-image">
-                <img src="" alt="">
+            <p>Crédito</p>
+        </a>
+        <a class="opcoes-cartao" href="{% url 'cartaopagina3' %}" style="text-decoration: none; color: inherit;">
+            <div class="circulo-card">
+                <img class="imagem-cartoes" src="{% static 'images/Card2.png' %}" alt="">
             </div>
-        </section>
+            <p>Dédito</p>
+        </a>    
+       
     </main>
 </body>
 

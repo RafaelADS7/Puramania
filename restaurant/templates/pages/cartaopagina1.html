@@ -20,7 +20,7 @@
     <header>
         <div class="sidebar-container">
             <div class="sidebar-logo">
-                <img src="./images/logo.png" alt="">
+                <img src="{% static 'images/logo.png' %}" alt="">
             </div>
             <ul class="sidebar-list">
                 <li class="sidebar-button">
@@ -30,7 +30,7 @@
                     <a href=""><i class="fa-solid fa-utensils sidebar-icon"></i></a>
                 </li>
                 <li class="sidebar-button">
-                    <a href="cartaopagina1.html"><i class="fa-solid fa-credit-card sidebar-icon"></i></a>
+                    <a href={% url 'cartaopagina1' %}><i class="fa-solid fa-credit-card sidebar-icon"></i></a>
                 </li>
                 <li class="sidebar-button">
                     <a href=""><i class="fa-solid fa-user sidebar-icon"></i></a>
@@ -48,7 +48,7 @@
             <p>É prático, seguro e você não perde nenhum <br>
              minuto a mais quando seu pedido chegar.</p>
              <br>
-            <button class="botoa_adicionar_novo_cartao"> <a href="cartaopagina2.html">Adicionar novo cartão</a>  </button>
+            <button class="botoa_adicionar_novo_cartao"> <a href="{% url 'cartaopagina2' %}">Adicionar novo cartão</a>  </button>
         </section>
         
         <div>
