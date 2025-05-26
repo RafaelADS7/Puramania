@@ -1,0 +1,64 @@
+{% load static %}
+<!DOCTYPE html>
+<html class="html-cartao" lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cartão</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto+Slab:wght@900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="body_cartao">
+    <header>
+        <div class="sidebar-container">
+            <div class="sidebar-logo">
+                <img src="{% static 'images/logo.png' %}" alt="">
+            </div>
+            <ul class="sidebar-list">
+                <li class="sidebar-button">
+                    <a href=""><i class="fa-solid fa-phone sidebar-icon"></i></a>
+                </li>
+                <li class="sidebar-button">
+                    <a href=""><i class="fa-solid fa-utensils sidebar-icon"></i></a>
+                </li>
+                <li class="sidebar-button">
+                    <a href="cartao.html"><i class="fa-solid fa-credit-card sidebar-icon"></i></a>
+                </li>
+                <li class="sidebar-button">
+                    <a href=""><i class="fa-solid fa-user sidebar-icon"></i></a>
+                </li>
+                <li class="sidebar-button">
+                    <a href=""><i class="fa-solid fa-heart sidebar-icon"></i></a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <main class="main-escolha-de-cartoes">
+        <h1 class="h1_pagina2">Escolha um meio de pagamento</h1>
+        
+        <a class="opcoes-cartao" href="{% url 'cartaopagina3' %}" style="text-decoration: none; color: inherit;">
+            <div class="circulo-card">
+                <img class="imagem-cartoes" src="{% static 'images/Card.png' %}" alt="">
+            </div>
+            <p>Crédito</p>
+        </a>
+        <a class="opcoes-cartao" href="{% url 'cartaopagina3' %}" style="text-decoration: none; color: inherit;">
+            <div class="circulo-card">
+                <img class="imagem-cartoes" src="{% static 'images/Card2.png' %}" alt="">
+            </div>
+            <p>Dédito</p>
+        </a>    
+       
+    </main>
+</body>
+
+</html>
